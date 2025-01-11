@@ -1,0 +1,92 @@
+body {
+    background-image: url('/IMG/quimica3.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    margin: 0;
+    padding: 0;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/IMG/quimica3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(3px);
+    z-index: -1;
+}
+
+header {
+    height: 50px;
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header a {
+    font-size: 25px;
+    letter-spacing: 5px;
+    color: #FFF755;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+header a:hover {
+    transform: scale(1.2);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px;
+}
+
+.contribution {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    height: 250px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contribution:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.7);
+}
+
+.contribution h2 {
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #FFF755;
+    margin-bottom: 10px;
+}
+
+.contribution p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #FFFAAA;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    color: white;
+    font-size: 16px;
+    margin-top: 40px;
+    position: relative;
+}
